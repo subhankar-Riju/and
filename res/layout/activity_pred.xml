@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".predActivity"
+    android:background="@drawable/ic_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                android:background="@android:drawable/progress_indeterminate_horizontal"
+                android:gravity="center"
+
+                android:text="Prediction"
+                android:textAllCaps="true"
+                android:textColor="#F1E7E6" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/button_background"
+                android:text="choose state" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_stcon"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="confirm" />
+
+                <Spinner
+                    android:id="@+id/sp_state"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+
+
+                    />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="choose district of that state"
+                android:background="@drawable/button_background"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="25dp">
+
+                <Spinner
+                    android:id="@+id/sp_dist"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/btn_distcon"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="confirm"
+                     />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/button_background"
+                android:text="Choose crime:" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="25dp">
+
+                <Spinner
+                    android:id="@+id/sp_crime"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/btn_typcon"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="confirm"
+                     />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:text="Enter year:" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="25dp">
+
+
+                <EditText
+                    android:id="@+id/et_year"
+                    android:layout_width="190dp"
+                    android:layout_height="50dp"
+
+                    android:ems="10"
+                    android:hint="eg: 2021"
+                    android:inputType="number" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_background"
+                    android:gravity="center"
+                    android:text="Predicted Crime No." />
+
+                <TextView
+                    android:id="@+id/tv_pred"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cardview_shadow_start_color"
+                android:text="click" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
